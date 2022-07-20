@@ -418,7 +418,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left: px;
 }
 
 .portfolio-card-item {
