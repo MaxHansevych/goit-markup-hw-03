@@ -59,8 +59,8 @@ body {
 /* <÷=============================== HEADER ===============================> */
 .container {
   width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -72,13 +72,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
 }
 .menu {
   background-color: var(--secondary-backdround-color);
   display: flex;
   align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .page-nav {
   display: flex;
@@ -89,8 +90,6 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .menu-link:hover,
@@ -104,6 +103,9 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .menu-contacts:hover,
 .menu-contacts:focus {
@@ -134,8 +136,6 @@ body {
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .current {
@@ -149,6 +149,8 @@ body {
 .hero {
   background-color: var(--secondary-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -194,8 +196,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .visually-hidden {
@@ -211,15 +211,18 @@ body {
   margin: -1px;
 }
 
-.our-advanatages-list {
+.our-advantages-list {
   display: flex;
 }
 .our-advantages-item {
-  max-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  width: 270px;
   justify-content: space-between;
   align-items: center;
 }
-.our-advanatages-title {
+.our-advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -228,26 +231,20 @@ body {
   margin-bottom: 10px;
 }
 
-.our-advanatages-text {
+.our-advantages-text {
   color: var(--light-theme-text);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.our-advanatages-item:not(:last-child) {
+.our-advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 /* </=============================== OUR ADVANAGES ===============================/> */
 /* <=============================== OUR WORK ===============================/> */
 .our-work {
   padding-bottom: 94px;
-}
-
-.our-work-container {
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .our-work-list {
@@ -276,21 +273,12 @@ body {
 
 .our-team-item {
   background-color: var(--primary-backdround-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.our-team-container {
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .our-team-main-title {
@@ -302,12 +290,19 @@ body {
   margin-bottom: 50px;
 }
 
+.our-team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -317,7 +312,6 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 30px;
 }
 /* </=============================== OUR TEAM ===============================/> */
 /* <=============================== FOOTER ===============================> */
@@ -376,10 +370,7 @@ body {
 /* </=============================== FOOTER ===============================/> */
 
 /* <=============================== PORTFOLIO ===============================> */
-.portfolio-container {
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .portfolio-button-list {
   display: flex;
   justify-content: center;
@@ -424,6 +415,10 @@ body {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-subtitle {
@@ -431,9 +426,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   margin-bottom: 4px;
 }
 
@@ -441,8 +433,5 @@ body {
   color: var(--light-theme-text);
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 /* </=============================== PORTFOLIO ===============================/> */
