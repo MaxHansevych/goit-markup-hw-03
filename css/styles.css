@@ -77,19 +77,21 @@ body {
   background-color: var(--secondary-backdround-color);
   display: flex;
   align-items: center;
+}
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.page-nav {
-  display: flex;
-}
 .menu-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-nav {
+  display: flex;
 }
 
 .menu-link:hover,
@@ -215,12 +217,7 @@ body {
   display: flex;
 }
 .our-advantages-item {
-  display: flex;
-  flex-wrap: wrap;
-  display: block;
   width: 270px;
-  justify-content: space-between;
-  align-items: center;
 }
 .our-advantages-title {
   font-weight: 700;
@@ -375,7 +372,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
 }
